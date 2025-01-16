@@ -22,6 +22,7 @@ h1{
     width: 700px;
     height: 200px;
    left: 300px;
+        padding: 35px;
 }
 .img{
     width: 90px;
@@ -157,19 +158,6 @@ section{
     font-size: 35px;
     text-align: center;
     font-family: garamond italic;
-    
+    padding: 5px;
 }
-@media screen (min-width:428px ) {
-    .gif{
-        padding: 35px;
-    }
 
-    .color{
-        padding: 5px;
-    }
-}
-@media screen (max-with: 1700px) {
-    .fondo{
-        background-attachment: fixed;
-    }
-}
