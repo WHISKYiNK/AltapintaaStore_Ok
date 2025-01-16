@@ -1,0 +1,175 @@
+.fondo{
+        background-image:  linear-gradient(140deg,
+        #ff0000,#f74e57,#ffdbdb,#f3b4ae);
+        
+        background-size: 500%;
+        animation: animado 25s infinite;
+        padding: 40;
+        }
+        @keyframes animado{
+            0% { background-position: 0% 50%; }
+            50% {
+                background-position: 100% 50%;}
+            100% {
+                background-position: 0% 50%;  }
+        }
+h1{
+    color: white;
+    padding: 40px;
+}
+.gif{
+    position:sticky;
+    width: 700px;
+    height: 200px;
+   left: 300px;
+}
+.img{
+    width: 90px;
+    height: 90px;
+    position:fixed;
+    top: 40px;
+    z-index: 10;
+    padding: 40px;
+} 
+.uno{
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 10;
+  padding: 10px;
+}
+.service{
+    background-color: #000000;
+   font-family:Georgia, 'Times New Roman', Times, serif ;
+   letter-spacing: 5px;
+   color: #ffffff;
+   text-align: center;
+   padding: 40px;
+}
+nav{
+    border-style: double;
+    border-color: #000000;
+    font-size: 25px;
+    font-family: garamond italic;
+    text-align: center;
+    padding: 5px;
+}
+
+h2{
+    font-size: 35px;
+    text-align: center;
+    color: #000000;
+    font-family: garamond italic;
+    padding: 35px;
+}
+
+h3{
+    text-align: center;
+    font-size: 25px;
+    color: #000000;
+    font-family: garamond italic;
+    padding: 40px;
+}
+.container{
+    border-style: double;
+    border-color: #000000;
+    scrollbar-width: thin;
+  width: auto;
+  height: 500px;
+  overflow: hidden;
+  
+}
+.lista{
+    list-style: none;
+    display: flex;
+    animation:carousel 10s alternate infinite;
+   
+}
+.card1{
+   
+    width: 450px;
+ height: 660px;
+
+}
+@keyframes carousel {
+    0%{
+        transform: translate(50px);
+    }
+    25%{
+        transform: translate(-200px);
+    }
+    50%{
+        transform: translate(-400px);
+    }
+    100%{
+        transform: translate(-1000px);
+}
+}
+.card2{
+    width: 450px;
+ height: 660px;
+
+}
+.card3{
+   height: 460px;
+   right: 150px;
+ 
+}
+
+.container1{
+    border-style: double;
+    border-color: #000000;
+    scrollbar-width: thin;
+  width: 450;
+  height: 500px;
+  overflow: hidden;
+  padding: 40px;
+}
+.lista1{
+    list-style: none;
+    display: flex;
+    animation:carousel1 10s alternate infinite;
+    
+}
+
+@keyframes carousel1 {
+    0%{
+        transform: translate(50px);
+    }
+    25%{
+        transform: translate(100px);
+    }
+    50%{
+        transform: translate(80px);
+    }
+    100%{
+        transform: translate(-900px);
+}
+}
+
+section{
+    background-color: #000000;
+   
+}
+.color{
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    font-family: garamond italic;
+    
+}
+@media screen (min-width:428px ) {
+    .gif{
+        padding: 35px;
+    }
+
+    .color{
+        padding: 5px;
+    }
+}
+@media screen (max-with: 1700px) {
+    .fondo{
+        background-attachment: fixed;
+    }
+}
